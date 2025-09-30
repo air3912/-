@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>����ʽ���ݽṹ���㷨ѧϰ·��</title>
+    <title>交互式数据结构与算法学习路径</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,27 +61,27 @@
 
     <div class="container mx-auto px-4 py-8 md:py-12">
         <header class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#8C6A46]">���ݽṹ���㷨ѧϰ·��</h1>
-            <p class="mt-4 text-lg text-gray-600">רΪ�����ѧԺ��һ�������ƵĽ���ʽѧϰ��� (���� C ����)</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-[#8C6A46]">数据结构与算法学习路径</h1>
+            <p class="mt-4 text-lg text-gray-600">专为计算机学院大一新生定制的交互式学习大纲 (主攻 C 语言)</p>
         </header>
 
         <div class="flex flex-col md:flex-row gap-8">
             
             <aside class="md:w-1/4 lg:w-1/5 md:sticky md:top-8 self-start">
                 <nav class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm border border-gray-200/80">
-                    <h3 class="font-bold text-lg text-gray-700 mb-4">ѧϰ�׶ε���</h3>
+                    <h3 class="font-bold text-lg text-gray-700 mb-4">学习阶段导航</h3>
                     <ul class="space-y-2" id="sidebar-nav">
-                        <li><a href="#stage-1" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">�׶�һ������</a></li>
-                        <li><a href="#stage-2" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">�׶ζ������������</a></li>
-                        <li><a href="#stage-3" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">�׶������㷨����</a></li>
+                        <li><a href="#stage-1" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">阶段一：基础</a></li>
+                        <li><a href="#stage-2" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">阶段二：树与非线性</a></li>
+                        <li><a href="#stage-3" class="sidebar-link flex justify-between items-center w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-[#EAE3D9] transition-colors duration-200">阶段三：算法核心</a></li>
                     </ul>
                 </nav>
             </aside>
 
             <main class="md:w-3/4 lg:w-4/5">
                 <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200/80 mb-8">
-                    <h2 class="text-2xl font-bold text-[#8C6A46] mb-4">��ٸ���</h2>
-                    <p class="text-gray-600 mb-6">��ѧϰ·�������ݽṹ���㷨��֪ʶ��ϵ����Ϊ�������Ľ׶Ρ������ͼ��չʾ��ÿ���׶ΰ�����ѧϰģ������������ֱ���˽�ѧϰ����ķֲ��������ർ�������¹�������ʼ����ѧϰ֮�ðɣ�</p>
+                    <h2 class="text-2xl font-bold text-[#8C6A46] mb-4">大纲概览</h2>
+                    <p class="text-gray-600 mb-6">本学习路径将数据结构与算法的知识体系划分为三个核心阶段。下面的图表展示了每个阶段包含的学习模块数量，助您直观了解学习任务的分布。点击左侧导航或向下滚动，开始您的学习之旅吧！</p>
                     <div class="chart-container">
                         <canvas id="overviewChart"></canvas>
                     </div>
@@ -89,250 +89,250 @@
 
                 <div id="content-sections" class="space-y-12">
                     <section id="stage-1" class="scroll-mt-24">
-                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">�׶�һ�����������Խṹ</h2>
-                        <p class="text-gray-600 mb-8">����ѧϰ���ݽṹ����㡣���׶ν��ص��������������õ��������ݽṹ���������㷨Ч�ʷ����ĺ���˼�롣�������� C ���Ե�ָ����ڴ������ѧ�ñ��µĹؼ�������·��Ŀ�Ƭ�鿴ÿ��ģ�����ϸѧϰҪ�㡣</p>
+                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">阶段一：基础与线性结构</h2>
+                        <p class="text-gray-600 mb-8">这是学习数据结构的起点。本阶段将重点掌握最基本、最常用的线性数据结构，并建立算法效率分析的核心思想。熟练运用 C 语言的指针和内存管理是学好本章的关键。点击下方的卡片查看每个模块的详细学习要点。</p>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">1. �������������</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">1. 基本概念与分析</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">ʱ�临�Ӷ� ($O(n)$) ��ռ临�Ӷȵķ�������㡣</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">���Է�����ѭ���͵ݹ��ʱ�临�Ӷȡ�</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">时间复杂度 ($O(n)$) 与空间复杂度的分析与计算。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">尝试分析简单循环和递归的时间复杂度。</p>
                                 </div>
                             </div>
 
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">2. ���� (Array)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">2. 数组 (Array)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">����Ķ��塢�ڴ����ͻ�����������̬���飨�� `malloc` �� `realloc` ��Ӧ�ã���</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����������⡢���ֲ��ң������������У���</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">数组的定义、内存分配和基本操作。动态数组（如 `malloc` 和 `realloc` 的应用）。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">简单数组操作题、二分查找（在有序数组中）。</p>
                                 </div>
                             </div>
 
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">3. ���� (Linked List)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">3. 链表 (Linked List)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">�������������塢�ڵ�ṹ�����롢ɾ����������C �����еĽṹ�� (`struct`) ��ָ�� (`*`) ������Ӧ�á�</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ʵ�������ķ�ת���ڵ��ɾ���������л��ļ�⡣</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">单向链表：定义、节点结构、插入、删除、遍历。C 语言中的结构体 (`struct`) 和指针 (`*`) 的熟练应用。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">实现链表的反转、节点的删除、链表中环的检测。</p>
                                 </div>
                             </div>
                             
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">4. ջ (Stack)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">4. 栈 (Stack)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">ջ�Ļ������LIFO������ȳ�������������ͻ�������������ʵ�֡�</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����ƥ�����⡢����ʽ��ֵ����׺ת��׺����</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">栈的基本概念（LIFO：后进先出）。基于数组和基于链表的两种实现。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">括号匹配问题、表达式求值（中缀转后缀）。</p>
                                 </div>
                             </div>
 
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">5. ���� (Queue)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">5. 队列 (Queue)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">���еĻ������FIFO���Ƚ��ȳ�����ѭ�����У�����ʵ�ֵĹؼ�����</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����������� (BFS) �ļ�Ӧ�ã��ö���ʵ�֣���</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">队列的基本概念（FIFO：先进先出）。循环队列（数组实现的关键）。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">广度优先搜索 (BFS) 的简单应用（用队列实现）。</p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section id="stage-2" class="scroll-mt-24">
-                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">�׶ζ�����������Խṹ</h2>
-                        <p class="text-gray-600 mb-8">�����������Խṹ�����ǽ���������ӵķ��������硣���׶εĺ������������νṹ���ر��Ƕ�����������ֲ������ݹ�˼�������ｫ��Ƶ��ʹ�á�ͬʱ�����ǽ�ѧϰ��ϣ����һ�����Ч�����ݽṹ��</p>
+                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">阶段二：树与非线性结构</h2>
+                        <p class="text-gray-600 mb-8">在掌握了线性结构后，我们将进入更复杂的非线性世界。本阶段的核心是理解树形结构，特别是二叉树及其各种操作。递归思想在这里将被频繁使用。同时，我们将学习哈希表这一极其高效的数据结构。</p>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">6. ���Ļ�������</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">6. 树的基本概念</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">���Ķ��塢�ȡ���ȡ��ڵ�ȸ���������Ķ��������ʡ�</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">�������Ͷ�����������</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">树的定义、度、深度、节点等概念。二叉树的定义与性质。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">理解树和二叉树的区别。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">7. �������ı���</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">7. 二叉树的遍历</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">ǰ�����򡢺���������ݹ�ͷǵݹ�ʵ�֣�����α��������ö��У���</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ʵ�ֶ������ĸ��ֱ���������������ȡ�</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">前序、中序、后序遍历（递归和非递归实现）。层次遍历（利用队列）。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">实现二叉树的各种遍历。计算树的深度。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">8. ������</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">8. 查找树</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">���������� (BST)�����塢���롢ɾ�������Ҳ�����ƽ����������˽� AVL ����������</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ʵ�� BST �Ļ���������</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">二叉搜索树 (BST)：定义、插入、删除、查找操作。平衡查找树（了解 AVL 或红黑树）。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">实现 BST 的基本操作。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">9. �� (Heap)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">9. 堆 (Heap)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">�ѵĶ��壨�󶥶� / С���ѣ��������������ȫ������ʵ�֡��ѻ� (Heapify) ������</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">���ȼ����е�ʵ�֡�Top K ���⡣</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">堆的定义（大顶堆 / 小顶堆）。基于数组的完全二叉树实现。堆化 (Heapify) 操作。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">优先级队列的实现。Top K 问题。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">10. ��ϣ�� (Hash Table)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">10. 哈希表 (Hash Table)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">��ϣ���������˼�롣��ϣ��ͻ�Ľ����ʽ������ַ���ȣ���</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����֮�͵���Ҫ���ٲ��ҵ���Ŀ��</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">哈希函数的设计思想。哈希冲突的解决方式（链地址法等）。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">两数之和等需要快速查找的题目。</p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section id="stage-3" class="scroll-mt-24">
-                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">�׶������㷨������߼��ṹ</h2>
-                        <p class="text-gray-600 mb-8">���Ǵӡ����ݽṹ�����㷨��˼���ȫ����ס����׶ν�ϵͳѧϰ���ྭ�������㷨��ͼ�ṹ��������㷨��������̽����̬�滮��̰�ĵȸ߼��㷨��Ʋ��ԡ��ⲿ�����������Ժͽ����������ĺ��ľ��������ڡ�</p>
+                        <h2 class="text-3xl font-bold mb-6 text-[#8C6A46] border-l-4 border-[#C8B59E] pl-4">阶段三：算法核心与高级结构</h2>
+                        <p class="text-gray-600 mb-8">这是从“数据结构”向“算法”思想的全面进阶。本阶段将系统学习各类经典排序算法、图结构及其相关算法，并深入探索动态规划、贪心等高级算法设计策略。这部分内容是面试和解决复杂问题的核心竞争力所在。</p>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">11. �����㷨 (Sorting)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">11. 排序算法 (Sorting)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">��Ч���򣺿������򡢹鲢���򡢶������ C ����ʵ�������ܷ�����</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ʵ��������Ҫ�����㷨��</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">高效排序：快速排序、归并排序、堆排序的 C 语言实现与性能分析。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">实现所有主要排序算法。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">12. ͼ (Graph)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">12. 图 (Graph)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">�洢��ʽ���ڽӾ����ڽӱ���ͼ�ı���������������� (DFS)������������� (BFS)��</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ͼ����ͨ���жϡ��Թ����� (DFS/BFS)��</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">存储方式：邻接矩阵、邻接表。图的遍历：深度优先搜索 (DFS)、广度优先搜索 (BFS)。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">图的连通性判断、迷宫问题 (DFS/BFS)。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">13. ͼ�㷨</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">13. 图算法</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">��С������ (Prim/Kruskal)�����·�� (Dijkstra/Floyd-Warshall)��</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">ʵ��һ���򵥵����·���㷨��</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">最小生成树 (Prim/Kruskal)。最短路径 (Dijkstra/Floyd-Warshall)。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">实现一个简单的最短路径算法。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">14. ��̬�滮 (DP)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">14. 动态规划 (DP)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">��̬�滮��˼�루�����ӽṹ���ص������⣩������ DP ģ�ͣ��������⡢����������С�</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����е��Ѷȵı��������������⡣</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">动态规划的思想（最优子结构、重叠子问题）。经典 DP 模型：背包问题、最长公共子序列。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">解决中等难度的背包、子序列问题。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">15. ̰���㷨 (Greedy)</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">15. 贪心算法 (Greedy)</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">̰���㷨���ص�������������</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">����򵥵������ѡ�����⡣</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">贪心算法的特点与适用条件。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">解决简单的找零或活动选择问题。</p>
                                 </div>
                             </div>
                             <div class="topic-card bg-white rounded-2xl shadow-sm border border-gray-200/80 cursor-pointer hover:shadow-md transition-shadow duration-300">
                                 <div class="p-5 flex justify-between items-center">
-                                    <h3 class="text-xl font-semibold text-gray-800">16. �������֧�޽�</h3>
+                                    <h3 class="text-xl font-semibold text-gray-800">16. 回溯与分支限界</h3>
                                     <span class="arrow-icon text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                                     </span>
                                 </div>
                                 <div class="topic-card-details px-5 border-t border-gray-200/80">
-                                    <h4 class="font-semibold mt-4">����֪ʶ��:</h4>
-                                    <p class="text-gray-600">���ݷ��Ļ���˼�루����������ռ䣩���������⣺N �ʺ�</p>
-                                    <h4 class="font-semibold mt-4">ˢ��/ʵ���ص�:</h4>
-                                    <p class="text-gray-600">�� C ����ʵ�� N �ʺ����⡣</p>
+                                    <h4 class="font-semibold mt-4">核心知识点:</h4>
+                                    <p class="text-gray-600">回溯法的基本思想（用于搜索解空间）。经典问题：N 皇后。</p>
+                                    <h4 class="font-semibold mt-4">刷题/实践重点:</h4>
+                                    <p class="text-gray-600">用 C 语言实现 N 皇后问题。</p>
                                 </div>
                             </div>
                         </div>
@@ -348,9 +348,9 @@
             const overviewChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['�׶�һ������ (5)', '�׶ζ������������ (5)', '�׶������㷨���� (6)'],
+                    labels: ['阶段一：基础 (5)', '阶段二：树与非线性 (5)', '阶段三：算法核心 (6)'],
                     datasets: [{
-                        label: 'ģ������',
+                        label: '模块数量',
                         data: [5, 5, 6],
                         backgroundColor: [
                             '#C8B59E', // Muted Brown
